@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88829BB82C71A3E8001951EF /* NextPayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BB72C71A3E8001951EF /* NextPayApp.swift */; };
+		88829BBA2C71A3E8001951EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BB92C71A3E8001951EF /* MainView.swift */; };
+		88829BBC2C71A3EA001951EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88829BBB2C71A3EA001951EF /* Assets.xcassets */; };
+		88829BBF2C71A3EA001951EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88829BBE2C71A3EA001951EF /* Preview Assets.xcassets */; };
+		88829BC92C71A3EA001951EF /* NextPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BC82C71A3EA001951EF /* NextPayTests.swift */; };
+		88829BD32C71A3EA001951EF /* NextPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BD22C71A3EA001951EF /* NextPayUITests.swift */; };
+		88829BD52C71A3EA001951EF /* NextPayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BD42C71A3EA001951EF /* NextPayUITestsLaunchTests.swift */; };
+		88829BE42C71A46E001951EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 88829BE32C71A46E001951EF /* FirebaseAuth */; };
+		88829BE62C71A46E001951EF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 88829BE52C71A46E001951EF /* FirebaseFirestore */; };
+		88829BE82C71A46E001951EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 88829BE72C71A46E001951EF /* FirebaseStorage */; };
+		88829BF02C71AAE5001951EF /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 88829BEC2C71A7B1001951EF /* GoogleService-Info.plist */; };
+		88829BF32C71AC40001951EF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BF22C71AC40001951EF /* RegisterView.swift */; };
+		88829BF52C71AC56001951EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BF42C71AC56001951EF /* LoginView.swift */; };
+		88829BF82C71ACB5001951EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BF72C71ACB5001951EF /* User.swift */; };
+		88829BFA2C71ACCC001951EF /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88829BF92C71ACCC001951EF /* Calendar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88829BC52C71A3EA001951EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88829BAC2C71A3E8001951EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88829BB32C71A3E8001951EF;
+			remoteInfo = NextPay;
+		};
+		88829BCF2C71A3EA001951EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88829BAC2C71A3E8001951EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88829BB32C71A3E8001951EF;
+			remoteInfo = NextPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88829BB42C71A3E8001951EF /* NextPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88829BB72C71A3E8001951EF /* NextPayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPayApp.swift; sourceTree = "<group>"; };
+		88829BB92C71A3E8001951EF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		88829BBB2C71A3EA001951EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88829BBE2C71A3EA001951EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88829BC42C71A3EA001951EF /* NextPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88829BC82C71A3EA001951EF /* NextPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPayTests.swift; sourceTree = "<group>"; };
+		88829BCE2C71A3EA001951EF /* NextPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88829BD22C71A3EA001951EF /* NextPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPayUITests.swift; sourceTree = "<group>"; };
+		88829BD42C71A3EA001951EF /* NextPayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88829BEC2C71A7B1001951EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88829BF22C71AC40001951EF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		88829BF42C71AC56001951EF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		88829BF72C71ACB5001951EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		88829BF92C71ACCC001951EF /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88829BB12C71A3E8001951EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88829BE42C71A46E001951EF /* FirebaseAuth in Frameworks */,
+				88829BE62C71A46E001951EF /* FirebaseFirestore in Frameworks */,
+				88829BE82C71A46E001951EF /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88829BC12C71A3EA001951EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88829BCB2C71A3EA001951EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88829BAB2C71A3E8001951EF = {
+			isa = PBXGroup;
+			children = (
+				88829BB62C71A3E8001951EF /* NextPay */,
+				88829BC72C71A3EA001951EF /* NextPayTests */,
+				88829BD12C71A3EA001951EF /* NextPayUITests */,
+				88829BB52C71A3E8001951EF /* Products */,
+				88829BE22C71A46E001951EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88829BB52C71A3E8001951EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88829BB42C71A3E8001951EF /* NextPay.app */,
+				88829BC42C71A3EA001951EF /* NextPayTests.xctest */,
+				88829BCE2C71A3EA001951EF /* NextPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88829BB62C71A3E8001951EF /* NextPay */ = {
+			isa = PBXGroup;
+			children = (
+				88829BFB2C71AD18001951EF /* ViewModels */,
+				88829BF62C71ACA5001951EF /* Models */,
+				88829BF12C71AC07001951EF /* Views */,
+				88829BEC2C71A7B1001951EF /* GoogleService-Info.plist */,
+				88829BB72C71A3E8001951EF /* NextPayApp.swift */,
+				88829BB92C71A3E8001951EF /* MainView.swift */,
+				88829BBB2C71A3EA001951EF /* Assets.xcassets */,
+				88829BBD2C71A3EA001951EF /* Preview Content */,
+			);
+			path = NextPay;
+			sourceTree = "<group>";
+		};
+		88829BBD2C71A3EA001951EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88829BBE2C71A3EA001951EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88829BC72C71A3EA001951EF /* NextPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				88829BC82C71A3EA001951EF /* NextPayTests.swift */,
+			);
+			path = NextPayTests;
+			sourceTree = "<group>";
+		};
+		88829BD12C71A3EA001951EF /* NextPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88829BD22C71A3EA001951EF /* NextPayUITests.swift */,
+				88829BD42C71A3EA001951EF /* NextPayUITestsLaunchTests.swift */,
+			);
+			path = NextPayUITests;
+			sourceTree = "<group>";
+		};
+		88829BE22C71A46E001951EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88829BF12C71AC07001951EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88829BF22C71AC40001951EF /* RegisterView.swift */,
+				88829BF42C71AC56001951EF /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88829BF62C71ACA5001951EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88829BF72C71ACB5001951EF /* User.swift */,
+				88829BF92C71ACCC001951EF /* Calendar.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88829BFB2C71AD18001951EF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88829BB32C71A3E8001951EF /* NextPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88829BD82C71A3EA001951EF /* Build configuration list for PBXNativeTarget "NextPay" */;
+			buildPhases = (
+				88829BB02C71A3E8001951EF /* Sources */,
+				88829BB12C71A3E8001951EF /* Frameworks */,
+				88829BB22C71A3E8001951EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextPay;
+			packageProductDependencies = (
+				88829BE32C71A46E001951EF /* FirebaseAuth */,
+				88829BE52C71A46E001951EF /* FirebaseFirestore */,
+				88829BE72C71A46E001951EF /* FirebaseStorage */,
+			);
+			productName = NextPay;
+			productReference = 88829BB42C71A3E8001951EF /* NextPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88829BC32C71A3EA001951EF /* NextPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88829BDB2C71A3EA001951EF /* Build configuration list for PBXNativeTarget "NextPayTests" */;
+			buildPhases = (
+				88829BC02C71A3EA001951EF /* Sources */,
+				88829BC12C71A3EA001951EF /* Frameworks */,
+				88829BC22C71A3EA001951EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88829BC62C71A3EA001951EF /* PBXTargetDependency */,
+			);
+			name = NextPayTests;
+			productName = NextPayTests;
+			productReference = 88829BC42C71A3EA001951EF /* NextPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88829BCD2C71A3EA001951EF /* NextPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88829BDE2C71A3EA001951EF /* Build configuration list for PBXNativeTarget "NextPayUITests" */;
+			buildPhases = (
+				88829BCA2C71A3EA001951EF /* Sources */,
+				88829BCB2C71A3EA001951EF /* Frameworks */,
+				88829BCC2C71A3EA001951EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88829BD02C71A3EA001951EF /* PBXTargetDependency */,
+			);
+			name = NextPayUITests;
+			productName = NextPayUITests;
+			productReference = 88829BCE2C71A3EA001951EF /* NextPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88829BAC2C71A3E8001951EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					88829BB32C71A3E8001951EF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					88829BC32C71A3EA001951EF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 88829BB32C71A3E8001951EF;
+					};
+					88829BCD2C71A3EA001951EF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 88829BB32C71A3E8001951EF;
+					};
+				};
+			};
+			buildConfigurationList = 88829BAF2C71A3E8001951EF /* Build configuration list for PBXProject "NextPay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88829BAB2C71A3E8001951EF;
+			packageReferences = (
+				88829BE12C71A420001951EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 88829BB52C71A3E8001951EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88829BB32C71A3E8001951EF /* NextPay */,
+				88829BC32C71A3EA001951EF /* NextPayTests */,
+				88829BCD2C71A3EA001951EF /* NextPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88829BB22C71A3E8001951EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88829BBF2C71A3EA001951EF /* Preview Assets.xcassets in Resources */,
+				88829BBC2C71A3EA001951EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88829BC22C71A3EA001951EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88829BCC2C71A3EA001951EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88829BB02C71A3E8001951EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88829BF02C71AAE5001951EF /* GoogleService-Info.plist in Sources */,
+				88829BF32C71AC40001951EF /* RegisterView.swift in Sources */,
+				88829BF82C71ACB5001951EF /* User.swift in Sources */,
+				88829BBA2C71A3E8001951EF /* MainView.swift in Sources */,
+				88829BF52C71AC56001951EF /* LoginView.swift in Sources */,
+				88829BB82C71A3E8001951EF /* NextPayApp.swift in Sources */,
+				88829BFA2C71ACCC001951EF /* Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88829BC02C71A3EA001951EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88829BC92C71A3EA001951EF /* NextPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88829BCA2C71A3EA001951EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88829BD52C71A3EA001951EF /* NextPayUITestsLaunchTests.swift in Sources */,
+				88829BD32C71A3EA001951EF /* NextPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88829BC62C71A3EA001951EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88829BB32C71A3E8001951EF /* NextPay */;
+			targetProxy = 88829BC52C71A3EA001951EF /* PBXContainerItemProxy */;
+		};
+		88829BD02C71A3EA001951EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88829BB32C71A3E8001951EF /* NextPay */;
+			targetProxy = 88829BCF2C71A3EA001951EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88829BD62C71A3EA001951EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88829BD72C71A3EA001951EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88829BD92C71A3EA001951EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NextPay/\" \"NextPay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.NextPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88829BDA2C71A3EA001951EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NextPay/\" \"NextPay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.NextPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88829BDC2C71A3EA001951EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.NextPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextPay";
+			};
+			name = Debug;
+		};
+		88829BDD2C71A3EA001951EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.NextPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextPay";
+			};
+			name = Release;
+		};
+		88829BDF2C71A3EA001951EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.NextPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NextPay;
+			};
+			name = Debug;
+		};
+		88829BE02C71A3EA001951EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = placeholder.NextPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NextPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88829BAF2C71A3E8001951EF /* Build configuration list for PBXProject "NextPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88829BD62C71A3EA001951EF /* Debug */,
+				88829BD72C71A3EA001951EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88829BD82C71A3EA001951EF /* Build configuration list for PBXNativeTarget "NextPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88829BD92C71A3EA001951EF /* Debug */,
+				88829BDA2C71A3EA001951EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88829BDB2C71A3EA001951EF /* Build configuration list for PBXNativeTarget "NextPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88829BDC2C71A3EA001951EF /* Debug */,
+				88829BDD2C71A3EA001951EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88829BDE2C71A3EA001951EF /* Build configuration list for PBXNativeTarget "NextPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88829BDF2C71A3EA001951EF /* Debug */,
+				88829BE02C71A3EA001951EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88829BE12C71A420001951EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88829BE32C71A46E001951EF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88829BE12C71A420001951EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		88829BE52C71A46E001951EF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88829BE12C71A420001951EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		88829BE72C71A46E001951EF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88829BE12C71A420001951EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 88829BAC2C71A3E8001951EF /* Project object */;
+}
